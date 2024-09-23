@@ -12,9 +12,3 @@ model Vika {
   id        String   @id @default(cuid())
   updatedAt DateTime @updatedAt
 }
-
-model Mor {
-  createdAt DateTime @default(now())
-  id        String   @id @default(cuid())
-  updatedAt DateTime @updatedAt
-}
