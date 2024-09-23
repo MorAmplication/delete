@@ -6,3 +6,15 @@ datasource db {
 generator client {
   provider = "prisma-client-js"
 }
+
+model Vika {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
+}
+
+model Mor {
+  createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
+  updatedAt DateTime @updatedAt
+}
