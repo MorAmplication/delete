@@ -59,4 +59,12 @@ export class VikaResolverBase {
       throw error;
     }
   }
+
+  @graphql.Query(() => String)
+  async TestAction(
+    @graphql.Args("args")
+    args: string
+  ): Promise<string> {
+    return this.service.TestAction(args);
+  }
 }

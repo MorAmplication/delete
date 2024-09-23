@@ -34,4 +34,7 @@ export class VikaServiceBase {
   async deleteVika(args: Prisma.VikaDeleteArgs): Promise<PrismaVika> {
     return this.prisma.vika.delete(args);
   }
+  async TestAction(args: string): Promise<string> {
+    throw new Error("Not implemented");
+  }
 }
